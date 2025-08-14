@@ -20,7 +20,11 @@ function App() {
       <Route element={<NavBar />}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/login" element={<Login />} />
+
+      <Route path='user'>
+        <Route path="/user/login" element={<Login />} />
+      </Route>
+      
 
       </Route>
       
