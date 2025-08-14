@@ -18,5 +18,14 @@ const userData=[
                 </div>
             ))
         }
+
+        <h1>User list Page:with Name in URL</h1>
+        {
+            userData.map((item)=>(
+                <div>
+                <h4><Link to={"/user/"+item.id+"/"+item.name}>{item.name}</Link></h4>
+                </div>
+            ))
+        }
     </div>
 }
